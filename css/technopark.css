@@ -1,0 +1,332 @@
+@font-face {
+  font-family: Circe;
+  src: url(../fonts/circe.ttf);
+  src: url(../fonts/Circe-Regular.woff2);
+}
+@font-face {
+  font-family: Circe;
+  src: url(../fonts/circe-bold.ttf);
+  src: url(../fonts/Circe-Bold.woff2);
+  font-weight: bold;
+}
+body {
+  --purple-text: #4A00E0;
+  --font-family: Circe, san-serif;
+  background-color: white;
+}
+body .wrapper_1010 {
+  max-width: 1010px;
+}
+body .wrapper_1140 {
+  max-width: 1140px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 11px;
+  padding: 14px 28px;
+  box-shadow: 0 4px 6px -4px rgba(139, 92, 246, 0.3), 0 10px 15px -3px rgba(139, 92, 246, 0.3);
+  background: linear-gradient(90deg, #7c3aed 0%, #8b5cf6 100%);
+  color: white;
+  text-decoration: none;
+}
+
+.section__header {
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #475569;
+}
+.section__header__intro {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 142%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7c3aed;
+}
+.section__header .title_inner {
+  margin-bottom: 14px;
+}
+.section__header__text {
+  margin: 0 auto;
+  max-width: 670px;
+}
+
+.techpark__partners {
+  margin-bottom: 0;
+  padding-bottom: 90px;
+  background-color: #F8FAFC;
+}
+.techpark__partners__card {
+  border-radius: 21px;
+  width: 476px;
+  height: 488px;
+  box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+}
+.techpark__partners__card__image-wrapper {
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+.techpark__partners__card__sticker {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  border-radius: 7px;
+  padding: 7px 14px 7px 40px;
+  backdrop-filter: blur(4px);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #6d28d9;
+  background: rgba(255, 255, 255, 0.9) no-repeat 14px 8px;
+}
+.techpark__partners__card__content {
+  padding: 28px;
+}
+.techpark__partners__card__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 133%;
+  color: #0f172a;
+}
+.techpark__partners__card__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 163%;
+  color: #475569;
+}
+.techpark__partners__card__text ul {
+  padding-left: 6px;
+  padding-top: 8px;
+}
+.techpark__partners__card__text li {
+  padding-left: 14px;
+  padding-bottom: 8px;
+}
+.techpark__partners__card__text li::marker {
+  content: url("../images/marker_mt.svg");
+}
+.techpark__partners__content {
+  display: flex;
+  gap: 30px;
+}
+
+.techpark__production__item {
+  margin-top: 60px;
+}
+.techpark__production__item__header {
+  margin-bottom: 20px;
+}
+.techpark__production__item__header__intro {
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  height: 35px;
+  background: #f5f3ff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #9810fa;
+}
+.techpark__production__item__header__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 163%;
+  color: #45556c;
+}
+.techpark__production__item__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  color: #0f172b;
+}
+.techpark__production__item__benefits {
+  border: 1px solid #f3e8ff;
+  border-radius: 16px;
+  padding: 18px 16px;
+  width: 540px;
+  height: 292px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #f5f3ff;
+}
+.techpark__production__item__main {
+  display: flex;
+  gap: 30px;
+}
+.techpark__production__item__main > div {
+  width: calc(50% - 12px);
+}
+.techpark__production__item__mini-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 182%;
+  color: #4A00E0;
+}
+.techpark__production__item__about > p {
+  margin: 4px 0 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #45556c;
+}
+.techpark__production__item__specs__about__list__item {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.techpark__production__item__specs__about__list__item .name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #314158;
+}
+.techpark__production__item__specs__about__list__item .divider {
+  margin: 0 8px;
+  position: relative;
+  flex: 2;
+  overflow: hidden;
+}
+.techpark__production__item__specs__about__list__item .divider::before {
+  content: "................................................................................................................";
+  position: absolute;
+  overflow: hidden;
+}
+.techpark__production__item__specs__about__list__item .value {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--purple-text);
+}
+
+.equipment__card {
+  border: 1px solid #f3e8ff;
+  border-radius: 16px;
+  padding: 12px 16px;
+  background: linear-gradient(174deg, #fff 0%, #faf5ff 100%);
+}
+.equipment__card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 145%;
+  color: #0f172b;
+}
+.equipment__card__specs {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--purple-text);
+}
+.equipment__card__header {
+  margin-bottom: 4px;
+  display: flex;
+  gap: 4px;
+}
+.equipment__card__sticker {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 100px;
+  background-color: #f5f3ff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--purple-text);
+}
+.equipment__card__sticker_flash {
+  padding: 0;
+  background: #f5f3ff url("../images/icon_flash.svg") center center no-repeat;
+}
+.equipment__card p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #45556c;
+}
+
+.s_calculator img {
+  max-width: 100%;
+}
+
+.why {
+  padding-bottom: 120px;
+  background-color: #0F172A;
+  color: white;
+}
+.why .section__header, .why .title_inner {
+  color: white;
+}
+.why__list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.why__item {
+  padding: 28px;
+  border: 1px solid #334155;
+  border-radius: 21px;
+  backdrop-filter: blur(4px);
+  background: rgba(30, 41, 59, 0.5);
+}
+.why__item_wide {
+  grid-column: span 2;
+}
+.why__item__icon {
+  margin-bottom: 20px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  width: 48px;
+  height: 48px;
+  background: rgba(139, 92, 246, 0.1) no-repeat center center;
+}
+.why__item__icon_1 {
+  background-image: url("../images/why_icon_1.svg");
+}
+.why__item__icon_2 {
+  background-image: url("../images/why_icon_2.svg");
+}
+.why__item__icon_3 {
+  background-image: url("../images/why_icon_3.svg");
+}
+.why__item__icon_4 {
+  background-image: url("../images/why_icon_4.svg");
+}
+.why__item__icon_5 {
+  background-image: url("../images/why_icon_5.svg");
+}
+.why__item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 163%;
+  color: #94a3b8;
+}
+.why .button-wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=technopark.css.map */
