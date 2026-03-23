@@ -20,6 +20,9 @@ body .wrapper_1010 {
 body .wrapper_1140 {
   max-width: 1140px;
 }
+body .wrapper_1160 {
+  max-width: 1160px;
+}
 
 img {
   max-width: 100%;
@@ -265,6 +268,13 @@ img {
   font-size: 14px;
   line-height: 143%;
   color: #45556c;
+}
+
+.online_top {
+  display: flex;
+}
+.online_bottom {
+  display: flex;
 }
 
 .s_calculator img {
