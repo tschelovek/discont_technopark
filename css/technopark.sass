@@ -19,8 +19,8 @@ body
       max-width: 1010px
     &_1140
       max-width: 1140px
-    &_1160
-      max-width: 1160px
+    //&_1160
+    //  max-width: 1160px
 
 img
   max-width: 100%
@@ -242,9 +242,121 @@ img
 .online
   &_top
     display: flex
+    &__main
+      flex: 7
+      p
+        font-weight: 400
+        font-size: 18px
+        line-height: 150%
+        color: #45556c
+    &__header__intro
+      margin-bottom: 8px
+      font-weight: 700
+      font-size: 12px
+      line-height: 142%
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #7c3aed
+    &__header
+      margin-bottom: 16px
+      &__title
+        margin-bottom: 16px
+      &__bottom
+        font-weight: 400
+        font-size: 15px
+        line-height: 155%
+        color: #475569
+    &__mini-title
+      font-weight: 700
+      font-size: 22px
+      line-height: 182%
+      color: var(--purple-text)
+    &__divider
+      flex: 1
+    &__benefits
+      flex: 5
+      &__item
+        margin-top: 26px
+        display: flex
+        &__icon-wrapper
+          margin-right: 16px
+          border-radius: 8px
+          width: 60px
+          min-width: 60px
+          height: 60px
+          background: #f5f3ff center center no-repeat
+          background-size: 36px 36px
+          &.icon_1
+            background-image: url("../images/icon_speed.svg")
+          &.icon_2
+            background-image: url("../images/icon_autonomy.svg")
+          &.icon_3
+            background-image: url("../images/icon_flexability.svg")
+          &.icon_4
+            background-image: url("../images/icon_avaliability.svg")
+        &__title
+          margin-bottom: 4px
+          font-weight: 700
+          font-size: 16px
+          line-height: 100%
+          color: var(--purple-text)
+        p
+          margin: 0
+          font-weight: 400
+          font-size: 16px
+          line-height: 140%
+          color: #314158
   &_bottom
     display: flex
-
+    align-items: flex-end
+    &__how
+      border: 1px solid #f1f5f9
+      border-radius: 21px
+      padding: 20px
+      width: 350px
+      height: 295px
+      box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1)
+      background: var(--white)
+      &__title
+        margin-bottom: 16px
+        font-weight: 700
+        font-size: 21px
+        line-height: 133%
+        color: #0f172a
+      &__list
+        padding: 0
+        list-style-type: none
+        counter-reset: num
+        li
+          margin-bottom: 10px
+          display: flex
+          font-weight: 400
+          font-size: 14px
+          line-height: 150%
+          color: #334155
+          &:before
+            margin-right: 8px
+            content: counter(num)
+            counter-increment: num
+            display: flex
+            align-items: center
+            font-weight: 700
+            font-size: 20px
+            line-height: 100%
+            color: #8b5cf6
+    &__text-wrapper
+      flex: 4
+    &__resume
+      margin: 32px 0 64px
+      font-family: var(--font-family)
+      font-weight: 700
+      font-size: 16px
+      line-height: 140%
+      color: var(--purple-text)
+    &__image-wrapper
+      flex: 8
+      img
+        transform: translateX(50px)
 .s_calculator
   img
     max-width: 100%
