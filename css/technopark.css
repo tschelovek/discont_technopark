@@ -475,4 +475,47 @@ img {
   text-align: center;
 }
 
+.mailing {
+  background: #f8fafc;
+}
+.mailing__banner {
+  border: 1px solid #f1f5f9;
+  border-radius: 21px;
+  padding: 41px;
+  width: 868px;
+  height: 411px;
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+}
+.mailing__text {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.mailing__sticker {
+  border-radius: 9999px;
+  padding: 3px 10px;
+  width: 62px;
+  height: 21px;
+  background: #f5f3ff;
+}
+.mailing__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+  color: #0f172a;
+}
+.mailing__policy {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 133%;
+  color: #94a3b8;
+}
+.mailing p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 155%;
+  color: #475569;
+}
+
 /*# sourceMappingURL=technopark.css.map */
