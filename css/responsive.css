@@ -1,0 +1,7 @@
+@media only screen and (max-width: 1024px) {
+  .online_bottom__image-wrapper img {
+    transform: unset;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

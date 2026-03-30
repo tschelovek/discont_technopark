@@ -13,6 +13,12 @@ body {
   --purple-text: #4A00E0;
   --font-family: Circe, san-serif;
   background-color: white;
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+body .wrapper {
+  width: unset;
 }
 body .wrapper_1010 {
   max-width: 1010px;
@@ -23,6 +29,7 @@ body .wrapper_1140 {
 
 img {
   max-width: 100%;
+  width: 100%;
 }
 
 .btn {
@@ -61,17 +68,18 @@ img {
   max-width: 670px;
 }
 
-.techpark__partners {
+.s_techpark__partners {
   margin-bottom: 0;
   padding-bottom: 90px;
   background-color: #F8FAFC;
 }
+
 .techpark__partners__card {
   border-radius: 21px;
-  width: 476px;
-  height: 488px;
   box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   background: var(--white);
+  flex: 1;
+  max-width: 476px;
 }
 .techpark__partners__card__image-wrapper {
   -webkit-border-radius: 20px 20px 0 0;
@@ -79,6 +87,10 @@ img {
   border-radius: 20px 20px 0 0;
   overflow: hidden;
   position: relative;
+  height: 224px;
+}
+.techpark__partners__card__image-wrapper img {
+  height: 100%;
 }
 .techpark__partners__card__sticker {
   position: absolute;
@@ -132,6 +144,7 @@ img {
 }
 .techpark__production__item__header {
   margin-bottom: 20px;
+  font-family: var(--font-family);
 }
 .techpark__production__item__header__intro {
   padding: 0 12px;
@@ -158,20 +171,38 @@ img {
   color: #0f172b;
 }
 .techpark__production__item__benefits {
+  margin-top: 40px;
   border: 1px solid #f3e8ff;
   border-radius: 16px;
   padding: 18px 16px;
-  width: 540px;
-  height: 292px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #f5f3ff;
+}
+.techpark__production__item__benefits__list {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #45556c;
+  list-style: none;
+  padding: 0;
+}
+.techpark__production__item__benefits__list li {
+  padding: 2px 0 2px 32px;
+  position: relative;
+}
+.techpark__production__item__benefits__list li::before {
+  padding: 0 8px 16px 0;
+  content: url("../images/icon_check_mark.svg");
+  position: absolute;
+  left: 0;
 }
 .techpark__production__item__main {
   display: flex;
   gap: 30px;
 }
 .techpark__production__item__main > div {
-  width: calc(50% - 12px);
+  flex: 1;
 }
 .techpark__production__item__mini-title {
   font-family: var(--font-family);
@@ -179,6 +210,9 @@ img {
   font-size: 22px;
   line-height: 182%;
   color: #4A00E0;
+}
+.techpark__production__item__about {
+  font-family: var(--font-family);
 }
 .techpark__production__item__about > p {
   margin: 4px 0 16px;
@@ -217,12 +251,41 @@ img {
   line-height: 100%;
   color: var(--purple-text);
 }
+.techpark__production__item__specs__about__options .opt-name {
+  margin-bottom: 12px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #314158;
+}
+.techpark__production__item__specs__about__options .opt-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.techpark__production__item__specs__about__options__item {
+  border-radius: 24px;
+  padding: 7px 16px 10px;
+  background-color: #f5f3ff;
+}
+.techpark__production__item__equipment {
+  display: flex;
+  gap: 32px;
+}
+.techpark__production__item__image-wrapper.mobile {
+  display: none;
+}
+.techpark__production__item__button-wrapper {
+  margin-top: 50px;
+}
 
 .equipment__card {
   border: 1px solid #f3e8ff;
   border-radius: 16px;
   padding: 12px 16px;
   background: linear-gradient(174deg, #fff 0%, #faf5ff 100%);
+  font-family: var(--font-family);
 }
 .equipment__card__title {
   font-weight: 700;
@@ -231,6 +294,7 @@ img {
   color: #0f172b;
 }
 .equipment__card__specs {
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -267,6 +331,10 @@ img {
   color: #45556c;
 }
 
+.online {
+  padding-bottom: 60px;
+  font-family: var(--font-family);
+}
 .online_top {
   display: flex;
 }
@@ -352,6 +420,7 @@ img {
   color: #314158;
 }
 .online_bottom {
+  margin-bottom: 60px;
   display: flex;
   align-items: flex-end;
 }
@@ -360,7 +429,6 @@ img {
   border-radius: 21px;
   padding: 20px;
   width: 350px;
-  height: 295px;
   box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   background: var(--white);
 }
@@ -413,6 +481,9 @@ img {
   transform: translateX(50px);
 }
 
+.s_calculator {
+  overflow: hidden;
+}
 .s_calculator img {
   max-width: 100%;
 }
@@ -476,21 +547,24 @@ img {
 }
 
 .mailing {
+  padding-bottom: 80px;
   background: #f8fafc;
 }
 .mailing__banner {
+  margin: 0 auto;
   border: 1px solid #f1f5f9;
+  background-color: white;
   border-radius: 21px;
   padding: 41px;
-  width: 868px;
-  height: 411px;
+  max-width: 868px;
   box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  background: var(--white);
-}
-.mailing__text {
   display: flex;
-  flex-direction: column;
-  gap: 13px;
+  gap: 42px;
+  justify-content: space-between;
+  font-family: var(--font-family);
+}
+.mailing__text-wrapper > div {
+  margin-bottom: 16px;
 }
 .mailing__sticker {
   border-radius: 9999px;
@@ -498,6 +572,13 @@ img {
   width: 62px;
   height: 21px;
   background: #f5f3ff;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 133%;
+  color: #7c3aed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mailing__title {
   font-weight: 700;
@@ -512,10 +593,131 @@ img {
   color: #94a3b8;
 }
 .mailing p {
+  max-width: 500px;
   font-weight: 400;
   font-size: 15px;
   line-height: 155%;
   color: #475569;
+}
+
+@media only screen and (max-width: 1280px) {
+  .online_bottom__image-wrapper {
+    max-width: 60%;
+  }
+  .online_bottom__image-wrapper img {
+    transform: unset;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .online_bottom {
+    margin-top: 24px;
+    flex-direction: column-reverse;
+  }
+  .online_bottom__image-wrapper {
+    margin: 0 auto;
+    max-width: unset;
+  }
+  .online_bottom__text-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  .online_bottom__text-wrapper > div {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .techpark__partners__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .techpark__production {
+    margin-bottom: 60px;
+  }
+  .techpark__production__item__main {
+    flex-direction: column;
+  }
+  .techpark__production__item__image-wrapper {
+    display: none;
+  }
+  .techpark__production__item__image-wrapper.mobile {
+    margin: 0 auto;
+    display: block;
+    max-width: 60%;
+  }
+  .techpark__production__item__button-wrapper {
+    text-align: center;
+  }
+  .online_top__header__title {
+    text-align: left;
+  }
+  .why__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .online_top {
+    flex-direction: column;
+  }
+  .online_top__benefits__item {
+    margin-top: 16px;
+  }
+  .online_top__main p {
+    margin-top: 0.25em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .techpark__production__item__equipment {
+    gap: 16px;
+  }
+  .techpark__production .section__header {
+    display: none;
+  }
+  .why__item {
+    padding: 12px;
+  }
+  .online_bottom__text-wrapper {
+    flex-direction: column;
+  }
+  .online_bottom__how {
+    width: unset;
+  }
+  .online_bottom__resume {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .techpark__partners__card__content {
+    padding: 16px;
+  }
+  .techpark__partners__card__image-wrapper {
+    height: unset;
+  }
+  .techpark__production__item__about > p {
+    font-size: 16px;
+  }
+  .techpark__production__item__header__text {
+    font-size: 16px;
+  }
+  .techpark__production__item__equipment {
+    margin: 22px 0;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .online_top__main p {
+    font-size: 16px;
+  }
+  .online_top__benefits__item p {
+    font-size: 14px;
+  }
+  .why__item {
+    padding: 22px;
+    grid-column: span 2;
+  }
+  .why__item:not(:last-child) {
+    padding-right: 80px;
+  }
+  .mailing__banner {
+    padding: 16px;
+    flex-direction: column-reverse;
+  }
 }
 
 /*# sourceMappingURL=technopark.css.map */
